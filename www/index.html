@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src https://code.jquery.com https://fonts.gstatic.com 'self' data: https://api.spaceflightnewsapi.net gap: https://ssl.gstatic.com 'unsafe-eval'; style-src https://fonts.googleapis.com 'self' 'unsafe-inline'; media-src *; img-src* 'self' data: content:;">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Hello World</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <ul id="tabs-swipe-demo" class="tabs">
+    <li class="tab col s3"><a href="#test-swipe-1">Test 1</a></li>
+    <li class="tab col s3"><a href="#test-swipe-2">Test 2</a></li>
+    <li class="tab col s3"><a href="#test-swipe-3">Test 3</a></li>
+    <li class="tab col s4"><a href="#test-swipe-4">Camera</a></li>
+  </ul>
+
+
+  <div id="test-swipe-1" class="col s12 blue tabs-content">
+    <!--Content tab 1-->
+    <a id="loadArticleButton" class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
+
+    <div id="articleList"> 
+
+
+      <div class="collection">
+      </div>
+                        
+    </div>
+
+  </div>
+
+
+
+  <div id="test-swipe-2" class="col s12 red tabs-content">
+    <!--Content tab 2-->
+  </div>
+
+
+
+  <div id="test-swipe-3" class="col s12 green tabs-content">
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <div class="icon-block">
+          <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+          <h5 class="center">Speeds up development</h5>
+
+          <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l4">
+        <div class="icon-block">
+          <h2 class="center light-blue-text">
+            <i class="material-icons">home</i></h2>
+          <h5 class="center">User Experience Focused</h5>
+
+          <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l4">
+        <div class="icon-block">
+          <h2 class="center light-blue-text"><i class="material-icons">check_circle</i></h2>
+          <h5 class="center">Easy to work with</h5>
+
+          <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="test-swipe-4" class="col s12 red tabs-content">
+    <!--Content tab 4-->
+    <a id="openCameraButton" class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>OpenCamera</a>
+    <img id="imageHtml"src="">
+  </div>
+
+
+
+  <!--  Scripts-->
+  <script src="cordova.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/index.js"></script>
+  </body>
+</html>
+
